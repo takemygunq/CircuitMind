@@ -21,7 +21,7 @@ checks everything for mistakes and writes the firmware.
 
 <sub>A real session, recorded: diagram → live simulation → pinout → schematic → overview → firmware.</sub>
 
-<p><a href="README.ru.md">Русская версия</a></p>
+<p><a href="README.ru.md">Русская версия</a> · <a href="LICENSE">MIT</a></p>
 
 </div>
 
@@ -220,3 +220,7 @@ pnpm lint && pnpm typecheck && pnpm test && pnpm build
 
 - AI answers are only as good as the model; the ERC catches a lot, but **check the design before powering real hardware** — especially anything with mains voltage.
 - Part names, brands and illustrations from the imported catalogue belong to their respective owners.
+
+## License
+
+[MIT](LICENSE) — covers the code. Imported catalogue data and images are not part of the repository and keep their owners' rights.
