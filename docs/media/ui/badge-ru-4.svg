@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="28" viewBox="0 0 161 28" role="img" aria-label="UI RU · EN · UK">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff6a1f"/><stop offset="1" stop-color="#ffb020"/></linearGradient></defs>
+<rect x=".5" y=".5" width="160" height="27" rx="13.5" fill="#1c120c" stroke="#ff6a1f" stroke-opacity=".45"/>
+<g transform="translate(18,14)" fill="none" stroke="#ff6a1f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle r="7"/><ellipse rx="3" ry="7" stroke="#ffb020"/><path d="M-7 0h14" stroke="#ffb020"/></g>
+<text x="34" y="18" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="600" fill="#f3e9df">UI</text>
+<path d="M57.6 1h91.6a12 12 0 0 1 12 12v2a12 12 0 0 1-12 12h-91.6z" fill="url(#g)"/>
+<text x="68.6" y="18" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" font-weight="800" fill="#1c120c">RU · EN · UK</text>
+</svg>

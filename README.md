@@ -10,11 +10,11 @@ Describe a device in plain words — the AI picks the board and parts, draws the
 checks everything for mistakes and writes the firmware.
 
 <p>
-  <img src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs" alt="Next.js 16" />
-  <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind 4" />
-  <img src="https://img.shields.io/badge/models-Claude%20·%20GPT%20·%20Gemini%20·%20Ollama-ff5a1f?style=flat-square" alt="Claude, GPT, Gemini, Ollama" />
-  <img src="https://img.shields.io/badge/UI-RU%20·%20EN%20·%20UK-0b0b0c?style=flat-square" alt="Languages" />
+  <img src="docs/media/ui/badge-en-0.svg" height="28" alt="Next.js 16" />
+  <img src="docs/media/ui/badge-en-1.svg" height="28" alt="TypeScript strict" />
+  <img src="docs/media/ui/badge-en-2.svg" height="28" alt="Tailwind 4" />
+  <img src="docs/media/ui/badge-en-3.svg" height="28" alt="models Claude · GPT · Gemini · Ollama" />
+  <img src="docs/media/ui/badge-en-4.svg" height="28" alt="UI RU · EN · UK" />
 </p>
 
 <img src="docs/media/tour.gif" alt="A tour of CircuitMind: project, diagram, simulation, pinout, schematic, overview, code" width="100%" />
@@ -78,16 +78,16 @@ CircuitMind treats the model as an engineer who has to **hand in a checkable des
 
 ## Features
 
-- 🤖 **Agentic design loop** — search the library → calculate → build the project → ERC → repair. Streamed live to the chat.
-- 🧭 **One workspace** — project list on the left, project chat next to it, views on the right (diagram, pinout, schematic, overview, firmware). Projects **autosave**.
-- 🔌 **Diagram + simulation** — cards with photos and pin rows; a MNA DC solver shows currents flowing, overloaded and burnt parts. Arduino Uno/Nano firmware can run in an AVR emulator against the same circuit.
-- 📍 **Pinouts for every component** — logical pinout pills in the style of a parts catalogue, with data from the catalogue when available.
-- 🧩 **Schematic** — symbols for resistors, LEDs, diodes, transistors, MOSFETs, potentiometers, relays and more; power and ground as proper symbols; non-overlapping nets.
-- 🧮 **Calculations** — E12/E24 resistor values, dividers, MOSFET drive, current budget, battery life.
-- 💻 **Firmware** — deterministic pin block + AI-written body, linted; Arduino C++ and MicroPython; compile for AVR boards in a **Docker sandbox** (no network, read-only root).
-- 📦 **Export** — SVG/PNG diagrams, BOM as CSV, project as JSON (and import).
-- 🛒 **Parts catalogue** — search, categories, part pages with pinout, shops and alternates (optional import, see below).
-- 🌍 **Three languages** — Russian, English, Ukrainian (a test checks that the dictionaries match).
+- <img src="docs/media/ui/loop.svg" width="22" height="22" align="absmiddle" alt="" /> **Agentic design loop** — search the library → calculate → build the project → ERC → repair. Streamed live to the chat.
+- <img src="docs/media/ui/workspace.svg" width="22" height="22" align="absmiddle" alt="" /> **One workspace** — project list on the left, project chat next to it, views on the right (diagram, pinout, schematic, overview, firmware). Projects **autosave**.
+- <img src="docs/media/ui/sim.svg" width="22" height="22" align="absmiddle" alt="" /> **Diagram + simulation** — cards with photos and pin rows; a MNA DC solver shows currents flowing, overloaded and burnt parts. Arduino Uno/Nano firmware can run in an AVR emulator against the same circuit.
+- <img src="docs/media/ui/pin.svg" width="22" height="22" align="absmiddle" alt="" /> **Pinouts for every component** — logical pinout pills in the style of a parts catalogue, with data from the catalogue when available.
+- <img src="docs/media/ui/schematic.svg" width="22" height="22" align="absmiddle" alt="" /> **Schematic** — symbols for resistors, LEDs, diodes, transistors, MOSFETs, potentiometers, relays and more; power and ground as proper symbols; non-overlapping nets.
+- <img src="docs/media/ui/calc.svg" width="22" height="22" align="absmiddle" alt="" /> **Calculations** — E12/E24 resistor values, dividers, MOSFET drive, current budget, battery life.
+- <img src="docs/media/ui/code.svg" width="22" height="22" align="absmiddle" alt="" /> **Firmware** — deterministic pin block + AI-written body, linted; Arduino C++ and MicroPython; compile for AVR boards in a **Docker sandbox** (no network, read-only root).
+- <img src="docs/media/ui/export.svg" width="22" height="22" align="absmiddle" alt="" /> **Export** — SVG/PNG diagrams, BOM as CSV, project as JSON (and import).
+- <img src="docs/media/ui/parts.svg" width="22" height="22" align="absmiddle" alt="" /> **Parts catalogue** — search, categories, part pages with pinout, shops and alternates (optional import, see below).
+- <img src="docs/media/ui/lang.svg" width="22" height="22" align="absmiddle" alt="" /> **Three languages** — Russian, English, Ukrainian (a test checks that the dictionaries match).
 
 ## Models
 

@@ -10,11 +10,11 @@
 проверит ошибки и напишет прошивку.
 
 <p>
-  <img src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs" alt="Next.js 16" />
-  <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind 4" />
-  <img src="https://img.shields.io/badge/модели-Claude%20·%20GPT%20·%20Gemini%20·%20Ollama-ff5a1f?style=flat-square" alt="Модели" />
-  <img src="https://img.shields.io/badge/UI-RU%20·%20EN%20·%20UK-0b0b0c?style=flat-square" alt="Языки" />
+  <img src="docs/media/ui/badge-ru-0.svg" height="28" alt="Next.js 16" />
+  <img src="docs/media/ui/badge-ru-1.svg" height="28" alt="TypeScript strict" />
+  <img src="docs/media/ui/badge-ru-2.svg" height="28" alt="Tailwind 4" />
+  <img src="docs/media/ui/badge-ru-3.svg" height="28" alt="модели Claude · GPT · Gemini · Ollama" />
+  <img src="docs/media/ui/badge-ru-4.svg" height="28" alt="UI RU · EN · UK" />
 </p>
 
 <img src="docs/media/tour.gif" alt="Тур по CircuitMind" width="100%" />
@@ -78,16 +78,16 @@ CircuitMind заставляет модель **сдавать проверяе�
 
 ## Возможности
 
-- 🤖 **Агентный цикл** — поиск в библиотеке → расчёт → сборка проекта → ERC → исправление; ход виден в чате.
-- 🧭 **Одно рабочее пространство** — слева проекты, рядом чат, справа виды (диаграмма, распиновка, схема, обзор, прошивка). **Автосохранение.**
-- 🔌 **Диаграмма и симуляция** — карточки с фото и рядами пинов; MNA-решатель показывает токи, перегрузки и сгоревшие детали. Прошивка Arduino Uno/Nano может выполняться в AVR-эмуляторе на той же схеме.
-- 📍 **Распиновка каждого компонента** — логические «таблетки» пинов, данные из каталога.
-- 🧩 **Принципиальная схема** — символы резисторов, LED, диодов, транзисторов, MOSFET, потенциометров, реле и др.; питание и земля как символы; цепи не накладываются.
-- 🧮 **Расчёты** — ряды E12/E24, делители, ключ на MOSFET, бюджет тока, время работы от батареи.
-- 💻 **Прошивка** — детерминированный блок пинов + тело от ИИ, линтер; Arduino C++ и MicroPython; компиляция AVR в **Docker-песочнице** (без сети, read-only).
-- 📦 **Экспорт** — SVG/PNG диаграмм, BOM в CSV, проект в JSON (и импорт).
-- 🛒 **Каталог деталей** — поиск, категории, страница детали с распиновкой, магазинами и аналогами (опциональный импорт, см. ниже).
-- 🌍 **Три языка** — русский, английский, украинский (тест проверяет совпадение словарей).
+- <img src="docs/media/ui/loop.svg" width="22" height="22" align="absmiddle" alt="" /> **Агентный цикл** — поиск в библиотеке → расчёт → сборка проекта → ERC → исправление; ход виден в чате.
+- <img src="docs/media/ui/workspace.svg" width="22" height="22" align="absmiddle" alt="" /> **Одно рабочее пространство** — слева проекты, рядом чат, справа виды (диаграмма, распиновка, схема, обзор, прошивка). **Автосохранение.**
+- <img src="docs/media/ui/sim.svg" width="22" height="22" align="absmiddle" alt="" /> **Диаграмма и симуляция** — карточки с фото и рядами пинов; MNA-решатель показывает токи, перегрузки и сгоревшие детали. Прошивка Arduino Uno/Nano может выполняться в AVR-эмуляторе на той же схеме.
+- <img src="docs/media/ui/pin.svg" width="22" height="22" align="absmiddle" alt="" /> **Распиновка каждого компонента** — логические «таблетки» пинов, данные из каталога.
+- <img src="docs/media/ui/schematic.svg" width="22" height="22" align="absmiddle" alt="" /> **Принципиальная схема** — символы резисторов, LED, диодов, транзисторов, MOSFET, потенциометров, реле и др.; питание и земля как символы; цепи не накладываются.
+- <img src="docs/media/ui/calc.svg" width="22" height="22" align="absmiddle" alt="" /> **Расчёты** — ряды E12/E24, делители, ключ на MOSFET, бюджет тока, время работы от батареи.
+- <img src="docs/media/ui/code.svg" width="22" height="22" align="absmiddle" alt="" /> **Прошивка** — детерминированный блок пинов + тело от ИИ, линтер; Arduino C++ и MicroPython; компиляция AVR в **Docker-песочнице** (без сети, read-only).
+- <img src="docs/media/ui/export.svg" width="22" height="22" align="absmiddle" alt="" /> **Экспорт** — SVG/PNG диаграмм, BOM в CSV, проект в JSON (и импорт).
+- <img src="docs/media/ui/parts.svg" width="22" height="22" align="absmiddle" alt="" /> **Каталог деталей** — поиск, категории, страница детали с распиновкой, магазинами и аналогами (опциональный импорт, см. ниже).
+- <img src="docs/media/ui/lang.svg" width="22" height="22" align="absmiddle" alt="" /> **Три языка** — русский, английский, украинский (тест проверяет совпадение словарей).
 
 ## Модели
 
