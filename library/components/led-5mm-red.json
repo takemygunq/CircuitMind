@@ -1,0 +1,45 @@
+{
+  "id": "led-5mm-red",
+  "name": "Светодиод 5 мм красный",
+  "category": "led",
+  "kind": "led",
+  "visual": "wokwi:wokwi-led",
+  "size": {
+    "width": 5.5,
+    "height": 9
+  },
+  "description": "Одноцветный светодиод. Всегда требует токоограничивающий резистор.",
+  "package": "5mm THT",
+  "priceUsd": 0.05,
+  "params": {
+    "color": "red",
+    "vfV": 2,
+    "ifTypMa": 10,
+    "ifMaxMa": 20
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "label": "A (+)",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive",
+      "notes": ["Длинная ножка"]
+    },
+    {
+      "id": "cathode",
+      "label": "K (−)",
+      "functions": ["other"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "passive",
+      "notes": ["Короткая ножка, плоский срез"]
+    }
+  ],
+  "tags": ["led", "light", "indicator", "diode", "red", "светодиод"]
+}

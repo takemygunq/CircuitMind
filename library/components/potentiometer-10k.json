@@ -1,0 +1,52 @@
+{
+  "id": "potentiometer-10k",
+  "name": "Потенциометр 10 кОм",
+  "category": "passive",
+  "kind": "potentiometer",
+  "visual": "wokwi:wokwi-potentiometer",
+  "size": {
+    "width": 9.5,
+    "height": 10
+  },
+  "description": "Переменный резистор; средний вывод (wiper) подключается к входу АЦП.",
+  "package": "Rotary 9mm",
+  "priceUsd": 0.4,
+  "params": {
+    "resistanceOhm": 10000,
+    "taper": "linear"
+  },
+  "pins": [
+    {
+      "id": "1",
+      "label": "GND",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "wiper",
+      "label": "WIPER",
+      "functions": ["other"],
+      "position": {
+        "x": 2.5,
+        "y": 0
+      },
+      "electrical": "passive",
+      "analog": true
+    },
+    {
+      "id": "3",
+      "label": "VCC",
+      "functions": ["other"],
+      "position": {
+        "x": 5,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["potentiometer", "pot", "knob", "variable resistor", "analog input", "потенциометр"]
+}

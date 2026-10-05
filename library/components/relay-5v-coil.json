@@ -1,0 +1,74 @@
+{
+  "id": "relay-5v-coil",
+  "name": "Реле 5 В (катушка, голое)",
+  "category": "switch",
+  "kind": "relay",
+  "visual": "svg:relay-coil",
+  "size": {
+    "width": 19,
+    "height": 15
+  },
+  "description": "Электромагнитное реле 5 В. Катушка — индуктивная нагрузка: ключ и обратный диод обязательны. Контакты могут коммутировать сетевое напряжение.",
+  "package": "Through-hole",
+  "priceUsd": 1.2,
+  "params": {
+    "inductive": 1,
+    "coilVoltageV": 5,
+    "coilCurrentMa": 70,
+    "mainsCapable": 1,
+    "contactRatingA": 10
+  },
+  "pins": [
+    {
+      "id": "COIL+",
+      "label": "COIL+",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "COIL-",
+      "label": "COIL-",
+      "functions": ["other"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "COM",
+      "label": "COM",
+      "functions": ["other"],
+      "position": {
+        "x": 10.16,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "NO",
+      "label": "NO",
+      "functions": ["other"],
+      "position": {
+        "x": 15.24,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "NC",
+      "label": "NC",
+      "functions": ["other"],
+      "position": {
+        "x": 17.78,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["relay", "coil", "mains", "switch", "реле"]
+}

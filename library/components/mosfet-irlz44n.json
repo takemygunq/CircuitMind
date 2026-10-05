@@ -1,0 +1,64 @@
+{
+  "id": "mosfet-irlz44n",
+  "name": "N-MOSFET IRLZ44N",
+  "category": "transistor",
+  "kind": "nmos",
+  "visual": "svg:mosfet-to220",
+  "size": {
+    "width": 10,
+    "height": 15
+  },
+  "description": "Logic-level N-канальный MOSFET. Открывается полностью от 5 В; при 3.3 В Rds(on) выше — проверяйте тепловыделение.",
+  "package": "TO-220",
+  "priceUsd": 1.2,
+  "params": {
+    "vgsThMinV": 1,
+    "vgsThMaxV": 2,
+    "vgsMaxV": 16,
+    "rdsOnOhm5V": 0.022,
+    "idMaxMa": 47000,
+    "vdssV": 55,
+    "gateChargeNc": 48
+  },
+  "pins": [
+    {
+      "id": "G",
+      "label": "G",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "input"
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "functions": ["other"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "S",
+      "label": "S",
+      "functions": ["other"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": [
+    "mosfet",
+    "transistor",
+    "n-channel",
+    "logic level",
+    "power switch",
+    "irlz44n",
+    "транзистор"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "servo-sg90",
+  "name": "Серво SG90",
+  "category": "actuator",
+  "kind": "servo",
+  "visual": "wokwi:wokwi-servo",
+  "size": {
+    "width": 23,
+    "height": 12
+  },
+  "description": "Микросервопривод 180°. Питание лучше внешнее 5 В: пиковый ток при нагрузке до ~650 мА.",
+  "package": "Module",
+  "priceUsd": 2,
+  "params": {
+    "supplyMinV": 4.8,
+    "supplyMaxV": 6,
+    "idleCurrentMa": 10,
+    "stallCurrentMa": 650,
+    "signalLogicMinV": 2.5,
+    "pulseMinUs": 500,
+    "pulseMaxUs": 2400
+  },
+  "pins": [
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    },
+    {
+      "id": "VCC",
+      "label": "VCC",
+      "functions": ["power"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "SIG",
+      "label": "SIG",
+      "functions": ["pwm"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "input",
+      "notes": ["Управляющий сигнал 50 Гц, 3.3 В достаточно"],
+      "minHighV": 2.5
+    }
+  ],
+  "tags": ["servo", "sg90", "motor", "actuator", "pwm", "серво", "сервопривод"]
+}

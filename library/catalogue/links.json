@@ -1,0 +1,20 @@
+{
+  "_comment": "Соответствие деталей и плат нашей библиотеки карточкам каталога (slug). Картинки и описание выводов берутся из каталога.",
+  "board:esp32-devkit-v1": "board-esp32-devkit-v1",
+  "board:arduino-uno": "arduino-uno",
+  "board:raspberry-pi-pico": "board-raspberry-pi-pico",
+  "component:dht22": "am2302-wired-dht22-temperature-humidity-sensor",
+  "component:diode-1n4007": "1n4007-diode",
+  "component:mosfet-irlz44n": "irlz44n-mosfet",
+  "component:hc-sr04": "hc-sr04",
+  "component:servo-sg90": "sg90-servo",
+  "component:dc-motor-130": "2023-130-dc-motor",
+  "component:ssd1306-128x64-i2c": "ssd1306-oled",
+  "component:potentiometer-10k": "111990001-dial-type-potentiometer-10k",
+  "component:button-6mm": "reverse-mount-tactile-switch-button-6mm",
+  "component:resistor": "e-12-series-resistor-set-610pcs-10e-to-1m",
+  "component:level-shifter-4ch": "txb0104-bi-directional-level-shifter",
+  "component:led-5mm-red": "fit0372-diffused-5mm-led-pack-50pcs",
+  "component:npn-2n2222": "npn-transistor-2n2222-bc547",
+  "component:relay-module-1ch": "arduino-1-relay-module-5vdc-10a"
+}

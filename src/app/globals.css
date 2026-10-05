@@ -1,0 +1,303 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Светлая тема — тёплая «бумага» (как каталог деталей), тёмная — основная, с оранжевым акцентом. */
+:root {
+  --bg: #ece8df;
+  --panel: #f7f4ed;
+  --panel-2: #efebe1;
+  --line: #d9d3c5;
+  --fg: #141414;
+  --muted: #6b675d;
+  --accent: #ff5a1f;
+  --accent-fg: #ffffff;
+  --accent-soft: rgba(255, 90, 31, 0.1);
+  --canvas: #f1ede4;
+  --grid: #d9d3c5;
+  --ink: #1a1a1a;
+  --danger: #d6321e;
+  --warn-bg: #fff0d1;
+  --warn-fg: #7a4b00;
+  --info-bg: #e4ece6;
+  --info-fg: #1f5a38;
+  --danger-bg: #fde3dd;
+  --danger-fg: #8c1a0c;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 8px 30px -12px rgba(40, 30, 10, 0.25);
+}
+
+.dark {
+  --bg: #08080a;
+  --panel: #111113;
+  --panel-2: #17171a;
+  --line: #242428;
+  --fg: #f4f1ea;
+  --muted: #8b8b94;
+  --accent: #ff5a1f;
+  --accent-fg: #ffffff;
+  --accent-soft: rgba(255, 90, 31, 0.14);
+  --canvas: #0c0c0e;
+  --grid: #1c1c20;
+  --ink: #ece9e2;
+  --danger: #ff6b4d;
+  --warn-bg: #2f2410;
+  --warn-fg: #ffcf85;
+  --info-bg: #10261a;
+  --info-fg: #8fe0b0;
+  --danger-bg: #3a1710;
+  --danger-fg: #ffb4a3;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 40px -16px rgba(0, 0, 0, 0.8);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-canvas: var(--canvas);
+  --color-warn-bg: var(--warn-bg);
+  --color-warn-fg: var(--warn-fg);
+  --color-info-bg: var(--info-bg);
+  --color-info-fg: var(--info-fg);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-fg: var(--danger-fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.125rem;
+  --radius-2xl: 1.5rem;
+  --shadow-card: var(--shadow);
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* Тонкие скроллбары в цвет темы */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+:focus-visible {
+  outline-color: var(--accent);
+}
+
+/* ───── фирменные приёмы ───── */
+
+/* Моноширинная метка над заголовком: COMPONENT CATALOGUE */
+.eyebrow {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Карточка: тонкая рамка, мягкая тень, подъём при наведении */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.25s,
+    background 0.25s;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+}
+
+/* Кнопки */
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  box-shadow: 0 6px 20px -8px color-mix(in srgb, var(--accent) 80%, transparent);
+  transition:
+    transform 0.15s,
+    filter 0.15s,
+    box-shadow 0.2s;
+}
+.btn-primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Сетка из точек и тёплое свечение за контентом */
+.bg-dots {
+  background-image: radial-gradient(var(--grid) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.glow-accent {
+  background:
+    radial-gradient(
+      60% 50% at 80% 0%,
+      color-mix(in srgb, var(--accent) 22%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      40% 40% at 0% 100%,
+      color-mix(in srgb, var(--accent) 10%, transparent),
+      transparent 70%
+    );
+}
+
+/* ───── анимации (отключаются при prefers-reduced-motion) ───── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-float {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes draw-wire {
+  from {
+    stroke-dashoffset: var(--len, 600);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.wire-draw {
+  stroke-dasharray: var(--len, 600);
+  animation: draw-wire 1.1s cubic-bezier(0.3, 0.6, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+
+@keyframes sheen {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+.text-sheen {
+  background: linear-gradient(100deg, var(--fg) 30%, var(--accent) 50%, var(--fg) 70%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sheen 6s linear infinite;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-float,
+  .wire-draw,
+  .text-sheen {
+    animation: none;
+  }
+  .text-sheen {
+    color: var(--fg);
+    background: none;
+  }
+}
+
+@keyframes pin-pulse {
+  0%,
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.18);
+  }
+}
+.pin-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pin-pulse 2.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pin-pulse {
+    animation: none;
+  }
+}
+
+/* Бегущие штрихи тока в симуляции: направление задаёт animation-direction, скорость — переменная --dur */
+@keyframes current-flow {
+  to {
+    stroke-dashoffset: -3;
+  }
+}
+.current-flow {
+  animation: current-flow var(--dur, 2s) linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .current-flow {
+    animation: none;
+  }
+}
+
+/* Ток на диаграмме: штрихи бегут по кривой, длина периода 30 */
+@keyframes current-flow-px {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+.current-flow-px {
+  animation: current-flow-px var(--dur, 2s) linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .current-flow-px {
+    animation: none;
+  }
+}

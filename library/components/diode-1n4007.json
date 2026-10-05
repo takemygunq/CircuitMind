@@ -1,0 +1,43 @@
+{
+  "id": "diode-1n4007",
+  "name": "Диод 1N4007",
+  "category": "diode",
+  "kind": "diode",
+  "visual": "svg:diode-do41",
+  "size": {
+    "width": 8,
+    "height": 3
+  },
+  "description": "Выпрямительный диод 1 А / 1000 В; применяется как обратный (flyback) диод для реле и моторов.",
+  "package": "DO-41",
+  "priceUsd": 0.03,
+  "params": {
+    "vfV": 1,
+    "ifMaxMa": 1000,
+    "vrrmV": 1000
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "label": "A",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "cathode",
+      "label": "K",
+      "functions": ["other"],
+      "position": {
+        "x": 8,
+        "y": 0
+      },
+      "electrical": "passive",
+      "notes": ["Сторона с полосой"]
+    }
+  ],
+  "tags": ["diode", "flyback", "rectifier", "1n4007", "диод"]
+}

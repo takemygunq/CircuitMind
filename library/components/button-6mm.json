@@ -1,0 +1,41 @@
+{
+  "id": "button-6mm",
+  "name": "Кнопка тактовая 6×6 мм",
+  "category": "switch",
+  "kind": "button",
+  "visual": "wokwi:wokwi-pushbutton",
+  "size": {
+    "width": 6,
+    "height": 6
+  },
+  "description": "Нормально разомкнутая кнопка. Нужна подтяжка (pull-up/pull-down) на входе МК.",
+  "package": "6x6mm THT",
+  "priceUsd": 0.05,
+  "params": {
+    "contactRatingMa": 50,
+    "bounceMs": 5
+  },
+  "pins": [
+    {
+      "id": "1",
+      "label": "1",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "functions": ["other"],
+      "position": {
+        "x": 6,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["button", "pushbutton", "switch", "input", "кнопка"]
+}

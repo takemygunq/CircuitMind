@@ -1,0 +1,54 @@
+{
+  "id": "npn-2n2222",
+  "name": "NPN транзистор 2N2222",
+  "category": "transistor",
+  "kind": "npn",
+  "visual": "svg:npn-to92",
+  "size": {
+    "width": 5,
+    "height": 5
+  },
+  "description": "Универсальный NPN-ключ до ~600 мА. Базовый резистор обязателен.",
+  "package": "TO-92",
+  "priceUsd": 0.1,
+  "params": {
+    "hfeMin": 100,
+    "icMaxMa": 600,
+    "vceoV": 40,
+    "vbeSatV": 1.2,
+    "vceSatV": 0.3
+  },
+  "pins": [
+    {
+      "id": "E",
+      "label": "E",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "functions": ["other"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "input"
+    },
+    {
+      "id": "C",
+      "label": "C",
+      "functions": ["other"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["npn", "transistor", "bjt", "switch", "driver", "2n2222", "транзистор"]
+}

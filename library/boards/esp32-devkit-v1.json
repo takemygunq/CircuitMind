@@ -1,0 +1,537 @@
+{
+  "id": "esp32-devkit-v1",
+  "name": "ESP32 DevKit V1 (30 pin)",
+  "mcu": "ESP32-WROOM-32",
+  "logicVoltage": 3.3,
+  "supply": {
+    "min": 4.5,
+    "max": 12,
+    "pins": ["VIN"]
+  },
+  "rails": [
+    {
+      "pinId": "3V3",
+      "voltage": 3.3,
+      "maxCurrentMa": 500,
+      "note": "Стабилизатор платы; Wi-Fi сам потребляет до ~240 мА в пике"
+    }
+  ],
+  "pins": [
+    {
+      "id": "EN",
+      "label": "EN",
+      "functions": ["other"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "notes": ["Reset: LOW перезапускает чип"],
+      "position": {
+        "x": 2.5,
+        "y": 5
+      }
+    },
+    {
+      "id": "GPIO36",
+      "label": "VP",
+      "functions": ["gpio", "adc"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["input_only"],
+      "notes": ["SENSOR_VP", "Нет внутренней подтяжки к питанию"],
+      "position": {
+        "x": 2.5,
+        "y": 7.54
+      }
+    },
+    {
+      "id": "GPIO39",
+      "label": "VN",
+      "functions": ["gpio", "adc"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["input_only"],
+      "notes": ["SENSOR_VN", "Нет внутренней подтяжки к питанию"],
+      "position": {
+        "x": 2.5,
+        "y": 10.08
+      }
+    },
+    {
+      "id": "GPIO34",
+      "label": "D34",
+      "functions": ["gpio", "adc"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["input_only"],
+      "notes": ["Нет внутренней подтяжки к питанию"],
+      "position": {
+        "x": 2.5,
+        "y": 12.62
+      }
+    },
+    {
+      "id": "GPIO35",
+      "label": "D35",
+      "functions": ["gpio", "adc"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["input_only"],
+      "notes": ["Нет внутренней подтяжки к питанию"],
+      "position": {
+        "x": 2.5,
+        "y": 15.16
+      }
+    },
+    {
+      "id": "GPIO32",
+      "label": "D32",
+      "functions": ["gpio", "adc", "touch", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": [],
+      "position": {
+        "x": 2.5,
+        "y": 17.7
+      }
+    },
+    {
+      "id": "GPIO33",
+      "label": "D33",
+      "functions": ["gpio", "adc", "touch", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": [],
+      "position": {
+        "x": 2.5,
+        "y": 20.24
+      }
+    },
+    {
+      "id": "GPIO25",
+      "label": "D25",
+      "functions": ["gpio", "adc", "dac", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": [],
+      "position": {
+        "x": 2.5,
+        "y": 22.78
+      }
+    },
+    {
+      "id": "GPIO26",
+      "label": "D26",
+      "functions": ["gpio", "adc", "dac", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": [],
+      "position": {
+        "x": 2.5,
+        "y": 25.32
+      }
+    },
+    {
+      "id": "GPIO27",
+      "label": "D27",
+      "functions": ["gpio", "adc", "touch", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": [],
+      "position": {
+        "x": 2.5,
+        "y": 27.86
+      }
+    },
+    {
+      "id": "GPIO14",
+      "label": "D14",
+      "functions": ["gpio", "adc", "touch", "pwm", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": ["HSPI SCK"],
+      "position": {
+        "x": 2.5,
+        "y": 30.4
+      }
+    },
+    {
+      "id": "GPIO12",
+      "label": "D12",
+      "functions": ["gpio", "adc", "touch", "pwm", "spi_miso"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["strapping", "adc2"],
+      "notes": ["HSPI MISO"],
+      "position": {
+        "x": 2.5,
+        "y": 32.94
+      }
+    },
+    {
+      "id": "GPIO13",
+      "label": "D13",
+      "functions": ["gpio", "adc", "touch", "pwm", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": ["HSPI MOSI"],
+      "position": {
+        "x": 2.5,
+        "y": 35.48
+      }
+    },
+    {
+      "id": "GND1",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "position": {
+        "x": 2.5,
+        "y": 38.02
+      },
+      "notes": []
+    },
+    {
+      "id": "VIN",
+      "label": "VIN",
+      "functions": ["power"],
+      "electrical": "power_in",
+      "notes": ["Вход 5 В; при питании от USB — выход 5 В"],
+      "position": {
+        "x": 2.5,
+        "y": 40.56
+      }
+    },
+    {
+      "id": "3V3",
+      "label": "3V3",
+      "functions": ["power"],
+      "electrical": "power_out",
+      "voltage": 3.3,
+      "maxCurrentMa": 500,
+      "position": {
+        "x": 25.8,
+        "y": 5
+      },
+      "notes": []
+    },
+    {
+      "id": "GND2",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "position": {
+        "x": 25.8,
+        "y": 7.54
+      },
+      "notes": []
+    },
+    {
+      "id": "GPIO15",
+      "label": "D15",
+      "functions": ["gpio", "adc", "touch", "pwm", "spi_cs"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["strapping", "adc2"],
+      "notes": ["HSPI CS"],
+      "position": {
+        "x": 25.8,
+        "y": 10.08
+      }
+    },
+    {
+      "id": "GPIO2",
+      "label": "D2",
+      "functions": ["gpio", "adc", "touch", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["strapping", "adc2"],
+      "notes": ["Встроенный светодиод на многих платах"],
+      "position": {
+        "x": 25.8,
+        "y": 12.62
+      }
+    },
+    {
+      "id": "GPIO4",
+      "label": "D4",
+      "functions": ["gpio", "adc", "touch", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["adc2"],
+      "notes": [],
+      "position": {
+        "x": 25.8,
+        "y": 15.16
+      }
+    },
+    {
+      "id": "GPIO16",
+      "label": "RX2",
+      "functions": ["gpio", "pwm", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["UART2 RX"],
+      "position": {
+        "x": 25.8,
+        "y": 17.7
+      }
+    },
+    {
+      "id": "GPIO17",
+      "label": "TX2",
+      "functions": ["gpio", "pwm", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["UART2 TX"],
+      "position": {
+        "x": 25.8,
+        "y": 20.24
+      }
+    },
+    {
+      "id": "GPIO5",
+      "label": "D5",
+      "functions": ["gpio", "pwm", "spi_cs"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": ["strapping"],
+      "notes": ["VSPI CS"],
+      "position": {
+        "x": 25.8,
+        "y": 22.78
+      }
+    },
+    {
+      "id": "GPIO18",
+      "label": "D18",
+      "functions": ["gpio", "pwm", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["VSPI SCK"],
+      "position": {
+        "x": 25.8,
+        "y": 25.32
+      }
+    },
+    {
+      "id": "GPIO19",
+      "label": "D19",
+      "functions": ["gpio", "pwm", "spi_miso"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["VSPI MISO"],
+      "position": {
+        "x": 25.8,
+        "y": 27.86
+      }
+    },
+    {
+      "id": "GPIO21",
+      "label": "D21",
+      "functions": ["gpio", "pwm", "i2c_sda"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["I2C по умолчанию"],
+      "position": {
+        "x": 25.8,
+        "y": 30.4
+      }
+    },
+    {
+      "id": "GPIO3",
+      "label": "RX0",
+      "functions": ["gpio", "pwm", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["UART0 RX — общий с USB-Serial"],
+      "position": {
+        "x": 25.8,
+        "y": 32.94
+      }
+    },
+    {
+      "id": "GPIO1",
+      "label": "TX0",
+      "functions": ["gpio", "pwm", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["UART0 TX — общий с USB-Serial"],
+      "position": {
+        "x": 25.8,
+        "y": 35.48
+      }
+    },
+    {
+      "id": "GPIO22",
+      "label": "D22",
+      "functions": ["gpio", "pwm", "i2c_scl"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["I2C по умолчанию"],
+      "position": {
+        "x": 25.8,
+        "y": 38.02
+      }
+    },
+    {
+      "id": "GPIO23",
+      "label": "D23",
+      "functions": ["gpio", "pwm", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "flags": [],
+      "notes": ["VSPI MOSI"],
+      "position": {
+        "x": 25.8,
+        "y": 40.56
+      }
+    }
+  ],
+  "languages": ["arduino", "esp-idf", "micropython", "circuitpython"],
+  "simulator": "behavioral",
+  "size": {
+    "width": 28.3,
+    "height": 51.5
+  },
+  "aliases": ["esp32", "esp32 devkit", "esp32 devkit v1", "doit esp32 devkit v1", "esp32 wroom 32"],
+  "art": {
+    "pcbColor": "#1a2026",
+    "silkColor": "#ececec",
+    "pinStyle": "header",
+    "parts": [
+      {
+        "type": "module",
+        "label": "ESP32-WROOM-32",
+        "antenna": true,
+        "x": 14.15,
+        "y": 15.4,
+        "w": 18,
+        "h": 25.5
+      },
+      {
+        "type": "chip",
+        "package": "sot",
+        "label": "",
+        "x": 14.15,
+        "y": 32.5,
+        "w": 6.5,
+        "h": 3.5
+      },
+      {
+        "type": "chip",
+        "package": "qfn",
+        "label": "CP2102",
+        "x": 14.15,
+        "y": 38.8,
+        "w": 5,
+        "h": 5
+      },
+      {
+        "type": "usb",
+        "variant": "micro",
+        "side": "bottom",
+        "x": 14.15,
+        "y": 48.7
+      },
+      {
+        "type": "button",
+        "label": "",
+        "color": "#222222",
+        "x": 5.6,
+        "y": 47
+      },
+      {
+        "type": "button",
+        "label": "",
+        "color": "#222222",
+        "x": 22.7,
+        "y": 47
+      },
+      {
+        "type": "led",
+        "label": "",
+        "color": "#ff3b3b",
+        "x": 14.15,
+        "y": 43.6
+      },
+      {
+        "type": "smd",
+        "kind": "capacitor",
+        "label": "",
+        "x": 7.5,
+        "y": 36,
+        "w": 2.4,
+        "h": 1.4
+      },
+      {
+        "type": "smd",
+        "kind": "capacitor",
+        "label": "",
+        "x": 20.8,
+        "y": 36,
+        "w": 2.4,
+        "h": 1.4
+      },
+      {
+        "type": "text",
+        "text": "EN",
+        "x": 5.6,
+        "y": 43.4,
+        "size": 1.3,
+        "rotate": 0
+      },
+      {
+        "type": "text",
+        "text": "BOOT",
+        "x": 22.7,
+        "y": 43.4,
+        "size": 1.3,
+        "rotate": 0
+      }
+    ]
+  },
+  "flexibleMux": true,
+  "selfCurrentMa": 80,
+  "priceUsd": 8
+}

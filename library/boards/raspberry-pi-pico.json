@@ -1,0 +1,660 @@
+{
+  "id": "raspberry-pi-pico",
+  "name": "Raspberry Pi Pico",
+  "mcu": "RP2040",
+  "logicVoltage": 3.3,
+  "supply": {
+    "min": 1.8,
+    "max": 5.5,
+    "pins": ["VSYS", "VBUS"]
+  },
+  "rails": [
+    {
+      "pinId": "3V3",
+      "voltage": 3.3,
+      "maxCurrentMa": 300
+    },
+    {
+      "pinId": "VBUS",
+      "voltage": 5,
+      "maxCurrentMa": 500,
+      "note": "Ограничено USB-источником"
+    }
+  ],
+  "pins": [
+    {
+      "id": "GP0",
+      "label": "GP0",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_miso", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA", "SPI0 RX", "UART0 TX"],
+      "physicalPin": 1,
+      "position": {
+        "x": 1.3,
+        "y": 1.6
+      }
+    },
+    {
+      "id": "GP1",
+      "label": "GP1",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_cs", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL", "SPI0 CS", "UART0 RX"],
+      "physicalPin": 2,
+      "position": {
+        "x": 1.3,
+        "y": 4.14
+      }
+    },
+    {
+      "id": "GND1",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 3,
+      "position": {
+        "x": 1.3,
+        "y": 6.68
+      }
+    },
+    {
+      "id": "GP2",
+      "label": "GP2",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SDA", "SPI0 SCK"],
+      "physicalPin": 4,
+      "position": {
+        "x": 1.3,
+        "y": 9.22
+      }
+    },
+    {
+      "id": "GP3",
+      "label": "GP3",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SCL", "SPI0 TX"],
+      "physicalPin": 5,
+      "position": {
+        "x": 1.3,
+        "y": 11.76
+      }
+    },
+    {
+      "id": "GP4",
+      "label": "GP4",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_miso", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA", "SPI0 RX", "UART1 TX"],
+      "physicalPin": 6,
+      "position": {
+        "x": 1.3,
+        "y": 14.3
+      }
+    },
+    {
+      "id": "GP5",
+      "label": "GP5",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_cs", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL", "SPI0 CS", "UART1 RX"],
+      "physicalPin": 7,
+      "position": {
+        "x": 1.3,
+        "y": 16.84
+      }
+    },
+    {
+      "id": "GND2",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 8,
+      "position": {
+        "x": 1.3,
+        "y": 19.38
+      }
+    },
+    {
+      "id": "GP6",
+      "label": "GP6",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SDA", "SPI0 SCK"],
+      "physicalPin": 9,
+      "position": {
+        "x": 1.3,
+        "y": 21.92
+      }
+    },
+    {
+      "id": "GP7",
+      "label": "GP7",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SCL", "SPI0 TX"],
+      "physicalPin": 10,
+      "position": {
+        "x": 1.3,
+        "y": 24.46
+      }
+    },
+    {
+      "id": "GP8",
+      "label": "GP8",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_miso", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA", "SPI1 RX", "UART1 TX"],
+      "physicalPin": 11,
+      "position": {
+        "x": 1.3,
+        "y": 27
+      }
+    },
+    {
+      "id": "GP9",
+      "label": "GP9",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_cs", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL", "SPI1 CS", "UART1 RX"],
+      "physicalPin": 12,
+      "position": {
+        "x": 1.3,
+        "y": 29.54
+      }
+    },
+    {
+      "id": "GND3",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 13,
+      "position": {
+        "x": 1.3,
+        "y": 32.08
+      }
+    },
+    {
+      "id": "GP10",
+      "label": "GP10",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SDA", "SPI1 SCK"],
+      "physicalPin": 14,
+      "position": {
+        "x": 1.3,
+        "y": 34.62
+      }
+    },
+    {
+      "id": "GP11",
+      "label": "GP11",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SCL", "SPI1 TX"],
+      "physicalPin": 15,
+      "position": {
+        "x": 1.3,
+        "y": 37.16
+      }
+    },
+    {
+      "id": "GP12",
+      "label": "GP12",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_miso", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA", "SPI1 RX", "UART0 TX"],
+      "physicalPin": 16,
+      "position": {
+        "x": 1.3,
+        "y": 39.7
+      }
+    },
+    {
+      "id": "GP13",
+      "label": "GP13",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_cs", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL", "SPI1 CS", "UART0 RX"],
+      "physicalPin": 17,
+      "position": {
+        "x": 1.3,
+        "y": 42.24
+      }
+    },
+    {
+      "id": "GND4",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 18,
+      "position": {
+        "x": 1.3,
+        "y": 44.78
+      }
+    },
+    {
+      "id": "GP14",
+      "label": "GP14",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SDA", "SPI1 SCK"],
+      "physicalPin": 19,
+      "position": {
+        "x": 1.3,
+        "y": 47.32
+      }
+    },
+    {
+      "id": "GP15",
+      "label": "GP15",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SCL", "SPI1 TX"],
+      "physicalPin": 20,
+      "position": {
+        "x": 1.3,
+        "y": 49.86
+      }
+    },
+    {
+      "id": "GP16",
+      "label": "GP16",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_miso", "uart_tx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA", "SPI0 RX", "UART0 TX"],
+      "physicalPin": 21,
+      "position": {
+        "x": 19.7,
+        "y": 49.86
+      }
+    },
+    {
+      "id": "GP17",
+      "label": "GP17",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_cs", "uart_rx"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL", "SPI0 CS", "UART0 RX"],
+      "physicalPin": 22,
+      "position": {
+        "x": 19.7,
+        "y": 47.32
+      }
+    },
+    {
+      "id": "GND5",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 23,
+      "position": {
+        "x": 19.7,
+        "y": 44.78
+      }
+    },
+    {
+      "id": "GP18",
+      "label": "GP18",
+      "functions": ["gpio", "pwm", "i2c_sda", "spi_sck"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SDA", "SPI0 SCK"],
+      "physicalPin": 24,
+      "position": {
+        "x": 19.7,
+        "y": 42.24
+      }
+    },
+    {
+      "id": "GP19",
+      "label": "GP19",
+      "functions": ["gpio", "pwm", "i2c_scl", "spi_mosi"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C1 SCL", "SPI0 TX"],
+      "physicalPin": 25,
+      "position": {
+        "x": 19.7,
+        "y": 39.7
+      }
+    },
+    {
+      "id": "GP20",
+      "label": "GP20",
+      "functions": ["gpio", "pwm", "i2c_sda"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SDA"],
+      "physicalPin": 26,
+      "position": {
+        "x": 19.7,
+        "y": 37.16
+      }
+    },
+    {
+      "id": "GP21",
+      "label": "GP21",
+      "functions": ["gpio", "pwm", "i2c_scl"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["I2C0 SCL"],
+      "physicalPin": 27,
+      "position": {
+        "x": 19.7,
+        "y": 34.62
+      }
+    },
+    {
+      "id": "GND6",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 28,
+      "position": {
+        "x": 19.7,
+        "y": 32.08
+      }
+    },
+    {
+      "id": "GP22",
+      "label": "GP22",
+      "functions": ["gpio", "pwm"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": [],
+      "physicalPin": 29,
+      "position": {
+        "x": 19.7,
+        "y": 29.54
+      }
+    },
+    {
+      "id": "RUN",
+      "label": "RUN",
+      "functions": ["other"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "notes": ["LOW перезапускает МК"],
+      "physicalPin": 30,
+      "position": {
+        "x": 19.7,
+        "y": 27
+      }
+    },
+    {
+      "id": "GP26",
+      "label": "GP26",
+      "functions": ["gpio", "pwm", "adc", "i2c_sda"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["ADC0, 12-бит, 0–3.3 В", "I2C1 SDA"],
+      "physicalPin": 31,
+      "position": {
+        "x": 19.7,
+        "y": 24.46
+      }
+    },
+    {
+      "id": "GP27",
+      "label": "GP27",
+      "functions": ["gpio", "pwm", "adc", "i2c_scl"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["ADC1, 12-бит, 0–3.3 В", "I2C1 SCL"],
+      "physicalPin": 32,
+      "position": {
+        "x": 19.7,
+        "y": 21.92
+      }
+    },
+    {
+      "id": "AGND",
+      "label": "AGND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 33,
+      "position": {
+        "x": 19.7,
+        "y": 19.38
+      }
+    },
+    {
+      "id": "GP28",
+      "label": "GP28",
+      "functions": ["gpio", "pwm", "adc"],
+      "electrical": "bidirectional",
+      "voltage": 3.3,
+      "maxCurrentMa": 12,
+      "notes": ["ADC2, 12-бит, 0–3.3 В"],
+      "physicalPin": 34,
+      "position": {
+        "x": 19.7,
+        "y": 16.84
+      }
+    },
+    {
+      "id": "ADC_VREF",
+      "label": "ADC_VREF",
+      "functions": ["other"],
+      "electrical": "input",
+      "voltage": 3.3,
+      "notes": ["Опорное напряжение АЦП"],
+      "physicalPin": 35,
+      "position": {
+        "x": 19.7,
+        "y": 14.3
+      }
+    },
+    {
+      "id": "3V3",
+      "label": "3V3",
+      "functions": ["power"],
+      "electrical": "power_out",
+      "voltage": 3.3,
+      "maxCurrentMa": 300,
+      "notes": ["3V3(OUT)"],
+      "physicalPin": 36,
+      "position": {
+        "x": 19.7,
+        "y": 11.76
+      }
+    },
+    {
+      "id": "3V3_EN",
+      "label": "3V3_EN",
+      "functions": ["other"],
+      "electrical": "input",
+      "notes": ["LOW отключает стабилизатор 3.3 В"],
+      "physicalPin": 37,
+      "position": {
+        "x": 19.7,
+        "y": 9.22
+      }
+    },
+    {
+      "id": "GND7",
+      "label": "GND",
+      "functions": ["gnd"],
+      "electrical": "gnd",
+      "voltage": 0,
+      "physicalPin": 38,
+      "position": {
+        "x": 19.7,
+        "y": 6.68
+      }
+    },
+    {
+      "id": "VSYS",
+      "label": "VSYS",
+      "functions": ["power"],
+      "electrical": "power_in",
+      "notes": ["Вход 1.8–5.5 В"],
+      "physicalPin": 39,
+      "position": {
+        "x": 19.7,
+        "y": 4.14
+      }
+    },
+    {
+      "id": "VBUS",
+      "label": "VBUS",
+      "functions": ["power"],
+      "electrical": "power_out",
+      "voltage": 5,
+      "notes": ["5 В от USB"],
+      "physicalPin": 40,
+      "position": {
+        "x": 19.7,
+        "y": 1.6
+      }
+    }
+  ],
+  "maxTotalCurrentMa": 50,
+  "languages": ["micropython", "circuitpython", "arduino"],
+  "simulator": "rp2040js",
+  "size": {
+    "width": 21,
+    "height": 51
+  },
+  "aliases": ["pico", "rpi pico", "raspberry pi pico", "rp2040 pico"],
+  "art": {
+    "pcbColor": "#16794a",
+    "silkColor": "#f4f4f4",
+    "pinStyle": "castellated",
+    "parts": [
+      {
+        "type": "usb",
+        "variant": "micro",
+        "side": "top",
+        "x": 10.5,
+        "y": 1.8
+      },
+      {
+        "type": "button",
+        "label": "",
+        "color": "#e9e9e9",
+        "x": 9.3,
+        "y": 13
+      },
+      {
+        "type": "led",
+        "label": "",
+        "color": "#3cff6e",
+        "x": 10.5,
+        "y": 7.4
+      },
+      {
+        "type": "chip",
+        "package": "soic",
+        "label": "FLASH",
+        "x": 10.5,
+        "y": 19,
+        "w": 5,
+        "h": 4
+      },
+      {
+        "type": "chip",
+        "package": "qfn",
+        "label": "RP2040",
+        "x": 10.5,
+        "y": 29,
+        "w": 7,
+        "h": 7
+      },
+      {
+        "type": "crystal",
+        "x": 10.5,
+        "y": 37.5,
+        "w": 3.4,
+        "h": 2.6
+      },
+      {
+        "type": "smd",
+        "kind": "capacitor",
+        "label": "",
+        "x": 5.8,
+        "y": 24,
+        "w": 2.4,
+        "h": 1.4
+      },
+      {
+        "type": "smd",
+        "kind": "capacitor",
+        "label": "",
+        "x": 15.2,
+        "y": 24,
+        "w": 2.4,
+        "h": 1.4
+      },
+      {
+        "type": "header",
+        "cols": 3,
+        "rows": 1,
+        "pitch": 2.54,
+        "x": 8,
+        "y": 48.2
+      },
+      {
+        "type": "text",
+        "text": "Pico",
+        "x": 10.5,
+        "y": 43.5,
+        "size": 2.2,
+        "rotate": 0
+      }
+    ]
+  },
+  "selfCurrentMa": 25,
+  "priceUsd": 4
+}

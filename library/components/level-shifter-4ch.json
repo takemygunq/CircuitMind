@@ -1,0 +1,160 @@
+{
+  "id": "level-shifter-4ch",
+  "name": "Преобразователь уровней 4 канала (LV↔HV)",
+  "category": "module",
+  "kind": "levelshifter",
+  "visual": "svg:level-shifter",
+  "size": {
+    "width": 15,
+    "height": 20
+  },
+  "description": "Двунаправленный преобразователь 3.3 В ↔ 5 В на MOSFET (BSS138). Питание LV и HV подключается к своим уровням.",
+  "package": "Module",
+  "priceUsd": 1,
+  "params": {
+    "supplyMinV": 1.8,
+    "supplyMaxV": 6,
+    "currentMa": 1
+  },
+  "pins": [
+    {
+      "id": "LV",
+      "label": "LV",
+      "functions": ["power"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "LV1",
+      "label": "LV1",
+      "functions": ["gpio"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "LV"
+    },
+    {
+      "id": "LV2",
+      "label": "LV2",
+      "functions": ["gpio"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "LV"
+    },
+    {
+      "id": "LV3",
+      "label": "LV3",
+      "functions": ["gpio"],
+      "position": {
+        "x": 7.62,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "LV"
+    },
+    {
+      "id": "LV4",
+      "label": "LV4",
+      "functions": ["gpio"],
+      "position": {
+        "x": 10.16,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "LV"
+    },
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 12.7,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    },
+    {
+      "id": "HV",
+      "label": "HV",
+      "functions": ["power"],
+      "position": {
+        "x": 0,
+        "y": 18
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "HV1",
+      "label": "HV1",
+      "functions": ["gpio"],
+      "position": {
+        "x": 2.54,
+        "y": 18
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "HV"
+    },
+    {
+      "id": "HV2",
+      "label": "HV2",
+      "functions": ["gpio"],
+      "position": {
+        "x": 5.08,
+        "y": 18
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "HV"
+    },
+    {
+      "id": "HV3",
+      "label": "HV3",
+      "functions": ["gpio"],
+      "position": {
+        "x": 7.62,
+        "y": 18
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "HV"
+    },
+    {
+      "id": "HV4",
+      "label": "HV4",
+      "functions": ["gpio"],
+      "position": {
+        "x": 10.16,
+        "y": 18
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "HV"
+    },
+    {
+      "id": "GND2",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 12.7,
+        "y": 18
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    }
+  ],
+  "tags": [
+    "level shifter",
+    "logic level",
+    "converter",
+    "3.3v",
+    "5v",
+    "bss138",
+    "преобразователь уровней"
+  ]
+}

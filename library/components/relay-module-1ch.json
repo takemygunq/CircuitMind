@@ -1,0 +1,86 @@
+{
+  "id": "relay-module-1ch",
+  "name": "Модуль реле 1 канал (5 В)",
+  "category": "module",
+  "kind": "relay_module",
+  "visual": "svg:relay-module",
+  "size": {
+    "width": 26,
+    "height": 34
+  },
+  "description": "Готовый модуль: драйвер и обратный диод на плате. Контакты COM/NO/NC могут коммутировать 220 В — соблюдайте осторожность.",
+  "package": "Module",
+  "priceUsd": 2,
+  "params": {
+    "supplyMinV": 5,
+    "supplyMaxV": 5,
+    "currentMa": 80,
+    "mainsCapable": 1,
+    "contactRatingA": 10
+  },
+  "pins": [
+    {
+      "id": "VCC",
+      "label": "VCC",
+      "functions": ["power"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    },
+    {
+      "id": "IN",
+      "label": "IN",
+      "functions": ["gpio"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "input",
+      "minHighV": 2.5
+    },
+    {
+      "id": "COM",
+      "label": "COM",
+      "functions": ["other"],
+      "position": {
+        "x": 12,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "NO",
+      "label": "NO",
+      "functions": ["other"],
+      "position": {
+        "x": 14.54,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "NC",
+      "label": "NC",
+      "functions": ["other"],
+      "position": {
+        "x": 17.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["relay module", "relay", "mains", "220v", "switch", "модуль реле"]
+}

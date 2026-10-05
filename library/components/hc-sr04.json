@@ -1,0 +1,71 @@
+{
+  "id": "hc-sr04",
+  "name": "Ультразвуковой дальномер HC-SR04",
+  "category": "sensor",
+  "kind": "hcsr04",
+  "visual": "wokwi:wokwi-hc-sr04",
+  "size": {
+    "width": 45,
+    "height": 20
+  },
+  "description": "Измерение расстояния 2–400 см. Выход ECHO — 5 В: для 3.3 В МК нужен делитель или преобразователь уровней.",
+  "package": "Module",
+  "priceUsd": 1.5,
+  "params": {
+    "supplyMinV": 4.5,
+    "supplyMaxV": 5.5,
+    "currentMa": 15,
+    "rangeMinCm": 2,
+    "rangeMaxCm": 400
+  },
+  "pins": [
+    {
+      "id": "VCC",
+      "label": "VCC",
+      "functions": ["power"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "power_in",
+      "voltage": 5
+    },
+    {
+      "id": "TRIG",
+      "label": "TRIG",
+      "functions": ["gpio"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "input",
+      "voltage": 5,
+      "notes": ["Импульс 10 мкс; 3.3 В обычно достаточно"],
+      "minHighV": 2.0
+    },
+    {
+      "id": "ECHO",
+      "label": "ECHO",
+      "functions": ["gpio"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "output",
+      "voltage": 5,
+      "notes": ["Выход 5 В! Нужен делитель для 3.3 В пинов"]
+    },
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 7.62,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    }
+  ],
+  "tags": ["hc-sr04", "ultrasonic", "distance", "range", "sensor", "дальномер", "расстояние"]
+}

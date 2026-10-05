@@ -1,0 +1,11 @@
+{
+  "_comment": "Models for the CLI bridges (the CLIs have no model-list endpoint). \"default\" is whatever the CLI itself selects. Add your own ids — they appear after \"Fetch models\".",
+  "claude-cli": [
+    { "id": "default", "label": "Default model of Claude Code" },
+    { "id": "opus", "label": "Opus (latest)" },
+    { "id": "sonnet", "label": "Sonnet (latest)" },
+    { "id": "haiku", "label": "Haiku (latest)" }
+  ],
+  "codex-cli": [{ "id": "default", "label": "Default model of Codex" }],
+  "gemini-cli": [{ "id": "default", "label": "Default model of Gemini CLI" }]
+}

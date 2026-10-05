@@ -1,0 +1,41 @@
+{
+  "id": "resistor",
+  "name": "Резистор",
+  "category": "passive",
+  "kind": "resistor",
+  "visual": "wokwi:wokwi-resistor",
+  "size": {
+    "width": 10,
+    "height": 2.5
+  },
+  "description": "Резистор 1/4 Вт. Номинал задаётся в поле value экземпляра (Ом, 10k, 4.7k).",
+  "package": "0.25W THT",
+  "priceUsd": 0.02,
+  "params": {
+    "powerW": 0.25,
+    "tolerancePct": 5
+  },
+  "pins": [
+    {
+      "id": "1",
+      "label": "1",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "functions": ["other"],
+      "position": {
+        "x": 10,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["resistor", "current limit", "pull-up", "pull-down", "divider", "резистор"]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "dht22",
+  "name": "DHT22 (AM2302)",
+  "category": "sensor",
+  "kind": "dht22",
+  "visual": "wokwi:wokwi-dht22",
+  "size": {
+    "width": 15,
+    "height": 20
+  },
+  "description": "Цифровой датчик температуры и влажности. Линия DATA требует подтяжки 4.7–10 кОм к VCC.",
+  "package": "Module",
+  "priceUsd": 3,
+  "params": {
+    "supplyMinV": 3.3,
+    "supplyMaxV": 5.5,
+    "currentMa": 1.5,
+    "pullupMinOhm": 4700,
+    "pullupMaxOhm": 10000,
+    "minPollIntervalMs": 2000,
+    "tempRangeC": "-40..80",
+    "humidityRangePct": "0..100",
+    "pullupPin": "DATA"
+  },
+  "pins": [
+    {
+      "id": "VCC",
+      "label": "VCC",
+      "functions": ["power"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "DATA",
+      "label": "DATA",
+      "functions": ["gpio"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "notes": ["Подтяжка 4.7–10 кОм к VCC"],
+      "referenceSupply": "VCC"
+    },
+    {
+      "id": "NC",
+      "label": "NC",
+      "functions": ["other"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 7.62,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    }
+  ],
+  "tags": [
+    "dht22",
+    "am2302",
+    "temperature",
+    "humidity",
+    "weather",
+    "sensor",
+    "датчик",
+    "температура",
+    "влажность"
+  ]
+}

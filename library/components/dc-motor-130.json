@@ -1,0 +1,44 @@
+{
+  "id": "dc-motor-130",
+  "name": "Коллекторный мотор 130 (3–6 В)",
+  "category": "actuator",
+  "kind": "motor",
+  "visual": "svg:dc-motor",
+  "size": {
+    "width": 25,
+    "height": 20
+  },
+  "description": "Малый DC-мотор. Индуктивная нагрузка: нужен ключ (транзистор/драйвер) и обратный диод; напрямую от пина МК нельзя.",
+  "package": "Module",
+  "priceUsd": 1,
+  "params": {
+    "inductive": 1,
+    "supplyMinV": 3,
+    "supplyMaxV": 6,
+    "runCurrentMa": 250,
+    "stallCurrentMa": 1500
+  },
+  "pins": [
+    {
+      "id": "M+",
+      "label": "M+",
+      "functions": ["other"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "passive"
+    },
+    {
+      "id": "M-",
+      "label": "M-",
+      "functions": ["other"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "passive"
+    }
+  ],
+  "tags": ["motor", "dc motor", "inductive", "мотор", "двигатель"]
+}

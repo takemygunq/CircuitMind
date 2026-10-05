@@ -1,0 +1,5 @@
+allowBuilds:
+  '@google/genai': false
+  protobufjs: false
+  sharp: false
+  unrs-resolver: false

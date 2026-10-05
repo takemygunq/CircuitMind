@@ -1,0 +1,68 @@
+{
+  "id": "ssd1306-128x64-i2c",
+  "name": "OLED SSD1306 128×64 (I²C)",
+  "category": "display",
+  "kind": "ssd1306",
+  "visual": "wokwi:wokwi-ssd1306",
+  "size": {
+    "width": 27,
+    "height": 27
+  },
+  "description": "Монохромный OLED-дисплей 0.96\" с интерфейсом I²C.",
+  "package": "Module",
+  "priceUsd": 3,
+  "params": {
+    "supplyMinV": 3.3,
+    "supplyMaxV": 5,
+    "currentMa": 20,
+    "i2cAddress": "0x3C",
+    "resolution": "128x64",
+    "hasPullups": 1
+  },
+  "pins": [
+    {
+      "id": "GND",
+      "label": "GND",
+      "functions": ["gnd"],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "electrical": "gnd",
+      "voltage": 0
+    },
+    {
+      "id": "VCC",
+      "label": "VCC",
+      "functions": ["power"],
+      "position": {
+        "x": 2.54,
+        "y": 0
+      },
+      "electrical": "power_in"
+    },
+    {
+      "id": "SCL",
+      "label": "SCL",
+      "functions": ["i2c_scl"],
+      "position": {
+        "x": 5.08,
+        "y": 0
+      },
+      "electrical": "input",
+      "referenceSupply": "VCC"
+    },
+    {
+      "id": "SDA",
+      "label": "SDA",
+      "functions": ["i2c_sda"],
+      "position": {
+        "x": 7.62,
+        "y": 0
+      },
+      "electrical": "bidirectional",
+      "referenceSupply": "VCC"
+    }
+  ],
+  "tags": ["ssd1306", "oled", "display", "screen", "i2c", "128x64", "дисплей", "экран"]
+}
